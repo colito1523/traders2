@@ -1,0 +1,40 @@
+#paymentModal {
+    display: flex !important; // Para centrar usando Flexbox
+    align-items: center;
+    justify-content: center;
+  
+    .modal-dialog {
+        display: flex;
+        align-items: center;
+        min-height: calc(100vh - 1rem);
+    }
+    
+    .modal-content {
+        margin: auto;
+    }
+    
+    .modal-header {
+      background-color: #343a40; // Fondo oscuro
+      color: #ffffff; // Texto blanco
+      border-bottom: 2px solid #ffc107; // Borde dorado
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+  
+    .modal-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  
+    .btn-close {
+      background-color: transparent;
+      border: none;
+      color: #ffffff;
+      &:hover {
+        color: #ffc107; // Hover dorado
+      }
+    }
+
+
+  }
+  

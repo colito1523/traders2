@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sasscandy</title>
+    <link rel="stylesheet" href="../assets/libs/OwlCarousel-2/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../dist/css/iconfont/tabler-icons.css">
+    <link rel="stylesheet" href="../dist/css/style.css">
+    <style>
+        .card {
+            background-color: #f8f1e4; /* Ivory color */
+        }
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            text-decoration: none; /* Remove underline */
+        }
+        .whatsapp-button i {
+            font-size: 30px;
+        }
+        .whatsapp-button:hover {
+            background-color: #20b358; /* Darker green on hover */
+            color: white; /* Ensure text color stays white */
+        }
+        .experience-members {
+            position: relative;
+            z-index: 10; /* Ensure it is above other elements */
+        }
+        .step-row .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <!------------------------------>
+    <!-- Header Start -->
+    <!------------------------------>
+    <header class="main-header position-fixed w-100">
+            <div class="container">
+                <nav class="navbar navbar-expand-xl py-0">
+                    <div class="logo">
+                        <a class="navbar-brand py-0 me-0" href="#"><img src="../assets/images/club_profit_latino_borde_blanco-removebg-preview.png" alt="" width="60" height="60"></a>
+                    </div>
+                    <a class="d-inline-block d-lg-block d-xl-none d-xxl-none  nav-toggler text-decoration-none"  data-bs-toggle="offcanvas" href="#offcanvasExample" aria-controls="offcanvasExample">
+                        <i class="ti ti-menu-2 text-warning"></i>
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">                                             
+                            <ul class="navbar-nav me-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link text-capitalize" aria-current="page" href="#">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-capitalize" href="#camino">Camino</a> <!-- Updated link -->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-capitalize" href="#operativa">Operativa</a> <!-- Updated link -->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-capitalize" href="#planes">Planes</a> <!-- Updated link -->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-capitalize" href="#faq">Preguntas Frecuentes</a> <!-- Updated link -->
+                                </li>
+                            </ul>
+                           
+                    </div>
+                </nav>
+            </div>
+
+            <div class="offcanvas offcanvas-start"  tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <div class="logo">
+                        <a class="navbar-brand py-0 me-0" href="#"><img src="../assets/images/Creato-logo.svg" alt=""></a>
+                    </div> 
+                    <button type="button" class="btn-close text-reset  ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"><i class="ti ti-x text-warning"></i></button>
+                </div>
+                <div class="offcanvas-body pt-0">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize" href="#camino">Camino</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize" href="#operativa">Operativa </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize" href="#planes">Planes </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize" href="#faq">Preguntas Frecuentes</a>
+                        </li>
+                        </ul>
+                </div>
+            </div>
+    </header>
+    <!------------------------------>
+     <!-- Header End  -->
+    <!------------------------------>
+
+      <!------------------------------>
+    <!-- VSL Section Start -->
+    <!------------------------------>
+<div>
+    <section class="vsl-section container text-center my-5 py-5">
+        <video class="w-100 mt-5" controls>
+            <source src="../assets/video/video presentacion.mp4" type="video/mp4">
+            Tu navegador no soporta el formato de video.
+        </video>
+    </section>
+</div>
+    <!------------------------------>
+    <!-- VSL Section End -->
+    <!------------------------------>
+
+    <!------------------------------>
+    <!--- Hero Banner Start--------->
+    <!------------------------------>
+    <section class="hero-banner position-relative overflow-hidden" style="background-color: #00274d;">
+        <div class="container">
+            <div class="row d-flex flex-wrap align-items-center">
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 p-0">
+                    <div class="position-relative left-hero-color">
+                        <h1 class="mb-0 fw-bold">Academia de Trading</h1>
+                        <p>Aprende mientras obtienes beneficios operando conmigo</p>
+                        <a href="#" class="btn btn-warning btn-hover-secondery">
+                            <span class="d-inline-block me-2"><i class="ti ti-playstation-triangle"></i></span> Descubre este video
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="position-relative rrrright-hercfeeo-colorrr">
+                        <img src="../assets/images/club profit blanco transparante.png" class="img-fluid" style="filter: drop-shadow(2px 2px 1px rgb(0, 0, 0)) drop-shadow(1px 1px 0 rgb(0, 0, 0));">
+                    </div>          
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------------>
+    <!--- Hero Banner End--------->
+    <!------------------------------>
+
+    <!------------------------------>
+    <!--- Service sectin Start------>
+    <!------------------------------>
+    <section class="service position-relative overflow-hidden" id="camino"> <!-- Added id -->
+        <div class="container position-relative">
+            <img src="../assets/images/service/dot-shape.png" class="shape position-absolute">
+            <div class="row">
+                <div class="col-12"><small class="fs-7 d-block">Cómo Funciona Nuestro Curso</small></div>
+                <div class="col-12 d-xxl-flex d-xl-flex d-lg-flex d-md-flex d-sm-block d-block align-items-center justify-content-xxl-between justify-content-xl-between justify-content-lg-between justify-content-md-between justify-content-sm-between justify-content-sm-center ">
+                    <h2 class="fs-2 text-black mb-0">Conviértete en un trader <br> rentable y exitoso</h2>
+                    <a href="#pricing" class="btn btn-warning btn-hover-secondery section-btn">Ver los Servicios</a>
+                </div>
+            </div>
+            <div class="row d-flex flex-wrap justify-content-center step-row">
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 text-center">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <div class="icon-round overflow-hidden rounded-circle position-relative d-flex align-items-center justify-content-center mx-auto text-center">
+                                <i class="ti ti-school text-primary position-relative"></i> <!-- Updated icon -->
+                            </div>
+                            <h5 class="mb-0 fw-500">Paso 1</h5>
+                            <h3 class="fs-4">Ingresa a mi Mentoria de Trading</h3>
+                            <p class="fs-7 mb-0 fw-500">Unete a mi comunidad de Traders y obtén
+                                acceso a mis estrategias y señales que te permitirán ser rentable en el mercado.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 text-center">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <div class="icon-round overflow-hidden rounded-circle position-relative d-flex align-items-center justify-content-center mx-auto text-center">
+                                <i class="ti ti-book text-primary position-relative"></i> <!-- Changed icon -->
+                            </div>
+                            <h5 class="mb-0 fw-500">Paso 2</h5>
+                            <h3 class="fs-4">Comienza a estudiar</h3>
+                            <p class="fs-7 mb-0 fw-500">Aprende de mí en cada operativa : Sigue mi plan de Trading y mi estrategia rentable con clases grabadas y análisis en vivo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 text-center">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <div class="icon-round overflow-hidden rounded-circle position-relative d-flex align-items-center justify-content-center mx-auto text-center">
+                                <i class="ti ti-trophy text-primary position-relative"></i> <!-- Changed icon -->
+                            </div>
+                            <h5 class="mb-0 fw-500">Paso 3</h5>
+                            <h3 class="fs-4">Comienza a ganar</h3>
+                            <p class="fs-7 mb-0 fw-500">arranca con tu cuenta real y con todo lo aprendido y mis
+                                señales comienza a generar ingresos consistentes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------------>
+    <!--- Service sectin Start------>
+    <!------------------------------>
+    
+  <!---------------------------------->
+<!--- Our Service sectin Start------>
+<!---------------------------------->
+<section class="our-service position-relative overflow-hidden" id="operativa"> <!-- Added id -->
+    <div class="container">
+        <div class="row align-items-center g-0">
+            <!-- Imagen -->
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                <img src="../assets/images/club profit free transparante.png" 
+                     class="img-fluid" 
+                     style="width: 600px; height: auto; border-radius: 15px; margin-right: 0;">
+            </div>
+            <!-- Información -->
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ps-2 experience-members">
+                <small class="fs-7 d-block">Nuestros Servicios</small>
+                <h2 class="fs-2 text-black mb-2">Sigue de cerca mi operativa</h2>
+                <p class="mb-1 fw-500 fs-7">
+                    Aquí te puedes unir <strong>GRATIS</strong> y estar al tanto de todas mis transmisiones, profits, ofertas y contenido exclusivo mientras tomas la decisión de unirte a los grupos privados.
+                </p>
+                <ul class="list-unstyled mb-0 pl-0">
+                    <li class="d-flex flex-wrap align-items-start">
+                        <i class="ti ti-circle-check fs-4 pe-2"></i>
+                        <span class="fs-7 text-black">Acceso a análisis en tiempo real de los mercados financieros.</span>
+                    </li>
+                    <li class="d-flex flex-wrap align-items-start">
+                        <i class="ti ti-circle-check fs-4 pe-2"></i>
+                        <span class="fs-7 text-black">Estrategias avanzadas para operar en Forex, índices y criptomonedas.</span>
+                    </li>
+                    <li class="d-flex flex-wrap align-items-start">
+                        <i class="ti ti-circle-check fs-4 pe-2"></i>
+                        <span class="fs-7 text-black">Asesoramiento personalizado para gestionar tu portafolio.</span>
+                    </li>
+                    <li class="d-flex flex-wrap align-items-start">
+                        <i class="ti ti-circle-check fs-4 pe-2"></i>
+                        <span class="fs-7 text-black">Tutoriales exclusivos para operar con plataformas como MetaTrader.</span>
+                    </li>
+                    <li class="d-flex flex-wrap align-items-start">
+                        <i class="ti ti-circle-check fs-4 pe-2"></i>
+                        <span class="fs-7 text-black">Acceso a un calendario económico con eventos clave.</span>
+                    </li>
+                </ul>
+                
+                <!-- Bloque de Experiencia y Miembros -->
+                <div class="row mt-4">
+                    <div class="col-6 text-center">
+                        <h3 class="fs-3 text-primary fw-bold">5 años+</h3>
+                        <p class="fs-7 text-black">Experiencia</p>
+                    </div>
+                    <div class="col-6 text-center">
+                        <h3 class="fs-3 text-primary fw-bold">4,000+</h3>
+                        <p class="fs-7 text-black">Miembros</p>
+                    </div>
+                    <div class="text-center mt-4">
+                    <a href="https://t.me/ClubProfitFREE?fbclid=PAZXh0bgNhZW0CMTEAAaaK_3CmZP2bnUh2LK3nW4kOSsinUgVGoeCf_r1AfsZWjQpZoYNsClfRdak_aem_6UQ3rlAFvXFjSb9NhDJVtw" target="_blank" class="btn btn-warning btn-hover-secondery text-capitalize">Unirse</a>
+                </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+<!-------------------------------> 
+<!--- Our Service sectin End----->
+<!------------------------------->
+
+  <!------------------------------>
+<!-- Pricing section Start ---->
+<!------------------------------>
+<section class="pricing position-relative overflow-hidden" id="planes"> <!-- Added id -->
+    <div class="container position-relative">
+        <div class="row justify-content-center">
+            <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 text-center">
+                <small class="fs-7 d-block">Planes de Precios</small>
+                <h2 class="fs-3 pricing-head text-black mb-0 position-relative" id="pricing">Escoge la mejor opción para ti segun el pais donde vives</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center price-plan">
+            <!-- Plan Latinoamérica -->
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="card position-relative shadow border-0 h-100">
+                    <div class="card-body pb-4 text-center">
+                        <img src="../assets/images/club_profit_latino_borde_blanco-removebg-preview.png" class="img-fluid rounded-circle mb-3" alt="Latinoamérica Course" style="width: 100px; height: 100px;">
+                        <small class="fs-7 d-block text-warning text-center">Latinoamérica</small>
+                        <h2 class="mb-4 text-center position-relative"><sub class="fs-2 text-black">199</sub><sup class="fs-6 position-absolute">$</sup></h2>
+                        <small class="fs-7 d-block text-center">Por 6 meses</small>
+                        <p class="fs-7 text-center fw-500">
+                            Aquí se trabajará con plataformas que se pueden usar desde Latinoamérica.
+                        </p>
+                    </div>
+                    <div class="card-action text-center pb-xxl-5 pb-xl-5 pb-lg-5 pb-md-4 pb-sm-4 pb-4">
+                        <a href="#"
+                        data-value="199.00" 
+                        data-title="Plan Latinoamérica"
+                        onclick="setPaymentDetails(this)"
+                        class="btn btn-warning btn-hover-secondery text-capitalize" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#paymentModal">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Plan USA/Canadá/Europa -->
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="card position-relative shadow border-0 h-100">
+                    <div class="position-absolute badge bg-warning d-inline-block mx-auto">
+                        Más Popular
+                    </div>
+                    <div class="card-body pb-4 text-center">
+                        <img src="../assets/images/club profit usa borde blanco.jpg" class="img-fluid rounded-circle mb-3" alt="USA Course" style="width: 100px; height: 100px;">
+                        <small class="fs-7 d-block text-warning text-center">USA - Canadá - Europa</small>
+                        <h2 class="mb-4 text-center position-relative"><sub class="fs-2 text-black">349</sub><sup class="fs-6 position-absolute">$</sup></h2>
+                        <small class="fs-7 d-block text-center">Por 6 meses</small>
+                        <p class="fs-7 text-center fw-500">
+                            Aquí se trabajará con plataformas que se pueden usar desde USA y países con regulaciones parecidas.
+                        </p>
+                    </div>
+                    <div class="card-action text-center pb-xxl-5 pb-xl-5 pb-lg-5 pb-md-4 pb-sm-4 pb-4">
+                        <a href="#" class="btn btn-warning btn-hover-secondery text-capitalize"
+                        data-bs-toggle="modal"
+                        data-value="349.00" 
+                        data-title="USA - Canadá - Europa"
+                        onclick="setPaymentDetails(this)"
+                        data-bs-target="#paymentModal">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Clases Uno a Uno -->
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="card position-relative shadow border-0 h-100">
+                    <div class="card-body pb-4 text-center">
+                        <img src="../assets/images/clases uno a uno.jpg" class="img-fluid rounded-circle mb-3" alt="One on One" style="width: 100px; height: 100px;">
+                        <small class="fs-7 d-block text-warning text-center">Clases Uno a Uno</small>
+                        <h2 class="mb-4 text-center position-relative"><sub class="fs-2 text-black">100</sub><sup class="fs-6 position-absolute">$</sup></h2>
+                        <small class="fs-7 d-block text-center">Por 1 hora</small>
+                        <p class="fs-7 text-center fw-500">
+                            Nos conectamos por Zoom y te ayudo con tus dudas de manera personalizada.
+                        </p>
+                    </div>
+                    <div class="card-action text-center pb-xxl-5 pb-xl-5 pb-lg-5 pb-md-4 pb-sm-4 pb-4">
+                        <a href="#"
+                        class="btn btn-warning btn-hover-secondery text-capitalize"
+                        data-bs-toggle="modal"
+                        data-value="100.00" 
+                        data-title="Clases Uno a Uno"
+                        onclick="setPaymentDetails(this)"
+                        data-bs-target="#paymentModal">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- New Service Card -->
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mt-4">
+                <div class="card position-relative shadow border-0 h-100">
+                    <div class="card-body pb-4 text-center">
+                        <img src="../assets/images/club profit latino borde blanco.png" class="img-fluid rounded-circle mb-3" alt="New Service" style="width: 100px; height: 100px;">
+                        <small class="fs-7 d-block text-warning text-center">Señales</small>
+                        <h2 class="mb-4 text-center position-relative"><sub class="fs-2 text-black">70</sub><sup class="fs-6 position-absolute">$</sup></h2>
+                        <small class="fs-7 d-block text-center">Por mes</small>
+                        <p class="fs-7 text-center fw-500">
+                           Señales para operar de Lunes a Viernes en el mercado.
+                        </p>
+                    </div>
+                    <div class="card-action text-center pb-xxl-5 pb-xl-5 pb-lg-5 pb-md-4 pb-sm-4 pb-4">
+                        <a href="#" 
+                        class="btn btn-warning btn-hover-secondery text-capitalize" 
+                        data-bs-toggle="modal" 
+                        data-value="70.00" 
+                        data-title="Señales"
+                        onclick="setPaymentDetails(this)"
+                        data-bs-target="#paymentModal">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!------------------------------>
+<!-- Pricing section End ------>
+<!------------------------------>
+
+<!-- Payment Modal -->
+<div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background-color: white; border-radius: 10px;">
+            <div class="modal-body">
+                <div class="d-flex flex-column align-items-center">
+                    <div id="paypal-button-container"></div>
+                    <button class="btn btn-secondary mb-3" id="crypto-button">Cripto</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Formulario Modal -->
+<div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="formModalLabel">Completa tus datos</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="userDetailsForm">
+                    <div class="mb-3">
+                        <label for="firstName" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="firstName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="lastName" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="lastName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phoneNumber" class="form-label">Número de Celular</label>
+                        <input type="tel" class="form-control" id="phoneNumber" required>
+                    </div>
+                    <button type="submit" class="btn btn-warning">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!------------------------------>
+    <!------ FAQ section Start------>
+    <!------------------------------>
+    <section class="faq position-relative overflow-hidden" id="faq"> <!-- Added id -->
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <small class="fs-7 d-block">Preguntas Frecuentes</small>
+                    <h2 class="fs-3 text-black mb-0">¿Tienes dudas sobre nuestra mentoria de Trading?</h2>
+                </div>
+            </div>
+            <div class="accordion-block">
+                <div class="accordion row" id="accordionPanelsStayOpenExample">
+                    <!-- Primera columna -->
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                              <button class="accordion-button text-black fs-7" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                  ¿Qué aprenderé en esta mentoria?
+                              </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                              <div class="accordion-body fs-7 fw-500 pt-0">
+                                  Aprenderás estrategias avanzadas de Trading, análisis técnico, gestión de riesgo y cómo interpretar el mercado en tiempo real.
+                              </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                              <button class="accordion-button collapsed text-black fs-7" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                  ¿Necesito experiencia previa para inscribirme?
+                              </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                              <div class="accordion-body fs-7 fw-500 pt-0">
+                                  No, la mentoria está diseñada para principiantes y traders con experiencia que buscan mejorar sus resultados.
+                              </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                              <button class="accordion-button collapsed text-black fs-7" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                  ¿Qué incluye la mentoria?
+                              </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                              <div class="accordion-body fs-7 fw-500 pt-0">
+                                  Acceso a transmisiones en vivo, contenido exclusivo, plantillas para estrategias, soporte técnico y mucho más.
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Segunda columna -->
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                              <button class="accordion-button collapsed text-black fs-7" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                                  ¿Qué instrumentos financieros puedo operar?
+                              </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                              <div class="accordion-body fs-7 fw-500 pt-0">
+                                  Podrás aprender a operar Forex, índices, criptomonedas y oro.
+                              </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                              <button class="accordion-button collapsed text-black fs-7" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                                  ¿Hay un horario para las clases?
+                              </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                              <div class="accordion-body fs-7 fw-500 pt-0">
+                                  No, todo el contenido está disponible las 24 horas para que lo estudies a tu ritmo.
+                              </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                              <button class="accordion-button collapsed text-black fs-7" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                                  ¿Puedo obtener asesorias personalizadas?
+                              </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+                              <div class="accordion-body fs-7 fw-500 pt-0">
+                                  Sí, contarás con asesoria directa para resolver tus dudas y mejorar tu aprendizaje.
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    <!------------------------------>
+    <!------ FAQ section End------>
+    <!------------------------------>    
+    
+
+    <a href="https://www.instagram.com/tu_perfil" class="instagram-button mb-5" target="_blank">
+        <i class="ti ti-brand-instagram"></i>
+    </a>
+    <a href="https://www.tiktok.com/@tu_perfil" class="tiktok-button mb-4" target="_blank">
+        <i class="ti ti-brand-tiktok"></i>
+    </a>
+    <a href="https://wa.me/573001151892?text=hola" class="whatsapp-button " target="_blank">
+        <i class="ti ti-brand-whatsapp"></i>
+    </a>
+    
+    <script src="../dist/js/jquery.min.js"></script>
+    <script src="../dist/js/bootstrap.min.js"></script>
+    <script src="../assets/libs/OwlCarousel-2/dist/owl.carousel.min.js"></script>
+    <script src="../dist/js/custom.js"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=Acar8yrNoZwfWhMTlvtAVX-peLdQPWhwYPVHijJmLjWVg8KBeJ40WEKyGmOPZwwjhrESB8IjFraO1g3r"></script>
+
+
+    <script>
+       let selectedProduct = {};
+
+function setPaymentDetails(element) {
+    // Captura los detalles del producto seleccionado
+    const price = element.getAttribute("data-value");
+    const title = element.getAttribute("data-title");
+    selectedProduct = { price, title };
+
+    // Actualiza el contenedor del modal con los detalles
+    document.getElementById("paypal-button-container").innerHTML = ""; // Limpia el contenedor
+    renderPayPalButton(price);
+}
+
+function renderPayPalButton(price) {
+    paypal.Buttons({
+        createOrder: function(data, actions) {
+            return actions.order.create({
+                purchase_units: [{
+                    amount: {
+                        value: price
+                    }
+                }]
+            });
+        },
+        onApprove: function(data, actions) {
+            return actions.order.capture().then(function(details) {
+                // Muestra el modal del formulario después del pago
+                $('#formModal').modal('show');
+            });
+        },
+        onError: function(err) {
+            console.error(err);
+            alert('Ocurrió un error al procesar el pago.');
+        }
+    }).render("#paypal-button-container");
+}
+
+document.getElementById("userDetailsForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const userDetails = {
+        firstName: document.getElementById("firstName").value,
+        lastName: document.getElementById("lastName").value,
+        email: document.getElementById("email").value,
+        phoneNumber: document.getElementById("phoneNumber").value,
+    };
+
+    console.log("Datos del usuario:", userDetails);
+
+    // Aquí puedes enviar los datos al backend o mostrar un mensaje de éxito
+    alert('Datos enviados correctamente. ¡Gracias!');
+    $('#formModal').modal('hide');
+});
+
+
+
+    </script>
+    
+
+    
+    
+
+</body>
+</html>
